@@ -1,0 +1,6 @@
+Hi {{ receiver.username }},
+    
+ {{ sender.username }} refused to loan you "{{ editions.0.title }}".
+ 
+
+{% include 'emails/signature.txt' %}

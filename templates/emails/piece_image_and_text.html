@@ -1,0 +1,34 @@
+{% load i18n %}
+
+<tr>
+    <td valign="top" width="280" class="leftColumnContent">
+        <table border="0" cellpadding="20" cellspacing="0" width="100%">
+            <tr>
+                <td valign="top">
+    		<a href="{{ signup_or_login_link }}&redirectAuthenticated={{ piece.url_safe }}" target="_blank">
+                    <div style="
+                        background: url({{piece.thumbnail.url_safe}}) no-repeat center center / cover;
+                        display: inline-block;
+                        width: 275px;
+                        margin: 0;
+                        height: 206px;" >
+                    </div>
+    		</a>
+                </td>
+             </tr>
+        </table>
+    </td>
+  	<td valign="top" width="280" class="rightColumnContent">
+        <table border="0" cellpadding="20" cellspacing="0" width="100%">
+            <tr mc:repeatable>
+                <td valign="top">
+                    <div >
+			<h3>{{ piece.title|truncatechars:20 }}</h3>
+                        <h4>{% trans 'by' %} {{ piece.artist_name|truncatechars:25 }}</h4>
+                        <h4>{{ piece.date_created|date:'Y' }}</h4>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>

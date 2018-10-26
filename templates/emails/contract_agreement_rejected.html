@@ -1,0 +1,18 @@
+{% extends 'emails/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+
+<div>
+    <p>{% trans "Dear" %},</p>
+    <p>
+        {% trans "We are sorry to inform you that " %} {{ signee }}
+        {% trans "declined the contract" %}
+    </p>
+</div>
+
+{% include 'emails/_contract_agreement_details.html' %}
+
+{% endblock %}

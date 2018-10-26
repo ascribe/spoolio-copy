@@ -1,0 +1,445 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-16 05:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: emails/messages.py:155 emails/messages.py:275 emails/messages.py:345
+#: emails/messages.py:593 emails/messages.py:608 emails/messages.py:618
+msgid "View"
+msgstr "Voir"
+
+#: emails/messages.py:244
+msgid "Reset your password"
+msgstr "Réinitialisez votre mot de passe"
+
+#: emails/messages.py:426 emails/messages.py:439 emails/messages.py:452
+#: emails/messages.py:503
+msgid "Review"
+msgstr "Réviser"
+
+#: emails/tasks.py:113
+msgid "Use this link to activate your account:\n"
+msgstr "Cliquez ici pour activer votre compte:\n"
+
+#: emails/tasks.py:115 emails/tasks.py:145
+msgid "Thank you and enjoy, \n"
+msgstr "Merci et profitez-en bien, \n"
+
+#: emails/tasks.py:117 emails/tasks.py:146
+msgid "The ascribe Team"
+msgstr "L'équipe ascribe"
+
+#: templates/emails/23vivi/signup.html:6
+#: templates/emails/creativecommons/signup.html:8
+#: templates/emails/portfolioreview/email_invite_judge.html:6
+#: templates/emails/portfolioreview/email_signup_judge.html:6
+#: templates/emails/sluice/email_invite_judge.html:8
+#: templates/emails/sluice/email_signup_judge.html:8
+msgid "Hi"
+msgstr "Bonjour"
+
+#: templates/emails/23vivi/signup.html:8
+msgid "Welcome to 23vivi.ascribe.io! We're happy to have you on-board."
+msgstr ""
+"Bienvenue chez 23vivi.ascribe.io! Nous sommes heureux de vous avoir à bord."
+
+#: templates/emails/23vivi/signup.html:15
+#: templates/emails/creativecommons/signup.html:17
+msgid "Click here to activate your account."
+msgstr "Cliquez ici pour activer votre compte."
+
+#: templates/emails/23vivi/signup.html:18
+msgid ""
+"23vivi.ascribe.io allows you to register your work and consign it to 23vivi."
+msgstr ""
+
+#: templates/emails/23vivi/subject.txt:2
+msgid "Welcome to 23vivi.ascribe.io"
+msgstr "Bienvenue chez 23vivi.ascribe.io"
+
+#: templates/emails/base.html:10 templates/emails/base_ops.html:10
+#: templates/emails/welcome/subject.txt:2
+msgid "Welcome to ascribe!"
+msgstr "Bienvenue chez ascribe!"
+
+#: templates/emails/contract_agreement_accepted.html:9
+#: templates/emails/contract_agreement_rejected.html:9
+#: templates/emails/ikonotv/ikonotv_contract_agreement.html:9
+msgid "Dear"
+msgstr ""
+
+#: templates/emails/contract_agreement_accepted.html:11
+msgid "We are glad to inform you that "
+msgstr ""
+
+#: templates/emails/contract_agreement_accepted.html:12
+msgid "accepted the contract"
+msgstr ""
+
+#: templates/emails/contract_agreement_rejected.html:11
+msgid "We are sorry to inform you that "
+msgstr ""
+
+#: templates/emails/contract_agreement_rejected.html:12
+msgid "declined the contract"
+msgstr ""
+
+#: templates/emails/creativecommons/base.html:8
+msgid "Welcome to Creative Commons France"
+msgstr "Bienvenue chez Creative Commons France"
+
+#: templates/emails/creativecommons/signature.html:5
+#: templates/emails/signature.html:5 templates/emails/welcome/body.txt:8
+msgid "Truly yours"
+msgstr "Sincèrement"
+
+#: templates/emails/creativecommons/signup.html:10
+msgid "Welcome to cc.ascribe.io! We're happy to have you on-board."
+msgstr ""
+"Bienvenue chez cc.ascribe.io! Nous sommes heureux de vous avoir à bord."
+
+#: templates/emails/creativecommons/signup.html:20
+msgid ""
+"Creative Commons France is all about giving you the power to protect and "
+"control your digital work."
+msgstr ""
+"Creative Commons France c'est le pouvoir de protéger et de contrôler votre "
+"oeuvre digital."
+
+#: templates/emails/creativecommons/signup.html:23
+msgid "Our site allows you to:"
+msgstr "Notre site vous permet:"
+
+#: templates/emails/creativecommons/signup.html:26
+msgid "Register your work and start telling its story."
+msgstr "D'enregistrez votre travail et de commencez à raconter son histoire."
+
+#: templates/emails/creativecommons/signup.html:27
+msgid "Append a creative commons license to your work."
+msgstr "D'ajouter une licence de Creative Commons à votre oeuvre."
+
+#: templates/emails/creativecommons/signup.html:28
+msgid "Share your work with friends and partners."
+msgstr "De partagez votre travail avec vos ami(e)s et partenaires."
+
+#: templates/emails/creativecommons/subject.txt:2
+msgid "Welcome to cc.ascribe.io"
+msgstr "Bienvenue chez cc.ascribe.io"
+
+#: templates/emails/ikonotv/base.html:8
+msgid "Welcome to IkonoTV"
+msgstr "Bienvenue chez IkonoTV"
+
+#: templates/emails/ikonotv/ikonotv_contract_agreement.html:11
+msgid "welcome on board the ikonoTV - ascribe platform."
+msgstr ""
+
+#: templates/emails/ikonotv/ikonotv_contract_agreement.html:13
+msgid "Please click "
+msgstr "Veuillez cliquez "
+
+#: templates/emails/ikonotv/ikonotv_contract_agreement.html:15
+msgid "here"
+msgstr "ici"
+
+#: templates/emails/ikonotv/ikonotv_contract_agreement.html:17
+msgid " in order to review the contract and register your works."
+msgstr ""
+
+#: templates/emails/ikonotv/ikonotv_contract_agreement.html:20
+msgid ""
+"Make sure you fill in all the sections regarding the information about the "
+"works so that all your credits appear properly on our stream."
+msgstr ""
+
+#: templates/emails/ikonotv/signature.html:5
+msgid "Sincerely"
+msgstr "Sincèrement"
+
+#: templates/emails/image_and_text.html:27
+#: templates/emails/loan/request_loan_pieces_to_loaner.html:18
+#: templates/emails/piece_image_and_text.html:27
+#: templates/emails/share/editions/body.html:16
+#: templates/emails/share/pieces/body.html:16
+#: templates/emails/transaction_accepted_sender_body.html:16
+#: templates/emails/transaction_notification_sender_body.html:18
+#: templates/emails/transaction_piece_accepted_receiver_body.html:16
+#: templates/emails/transaction_piece_rejected_receiver_body.html:16
+#: templates/emails/transaction_piece_request_receiver_body.html:18
+#: templates/emails/transaction_rejected_sender_body.html:16
+#: templates/emails/transaction_request_receiver_body.html:18
+#: templates/emails/transaction_request_sender_body.html:18
+msgid "by"
+msgstr "de"
+
+#: templates/emails/loan/request_loan_pieces_to_loaner.html:15
+msgid "is requesting you to loan them"
+msgstr "demande de vous prêter"
+
+#: templates/emails/passwordreset/body.html:18
+msgid "You have requested to reset your password."
+msgstr "Vous avez fait une requête pour réinitialiser votre mot de passe."
+
+#: templates/emails/passwordreset/body.html:20
+msgid "If you did not request this, please ignore this message."
+msgstr "Veuillez ignorer ce message si vous n'avez pas fait cette demande."
+
+#: templates/emails/portfolioreview/email_invite_judge.html:8
+#: templates/emails/portfolioreview/email_signup_judge.html:8
+msgid ""
+"We would like to invite you to be a jury member for Portfolio Review 2016."
+msgstr ""
+"Nous souhaitons vous inviter à être membre du jury pour Portfolio Review2016."
+
+#: templates/emails/portfolioreview/email_invite_judge.html:9
+#: templates/emails/portfolioreview/email_signup_judge.html:9
+#: templates/emails/sluice/email_invite_judge.html:11
+#: templates/emails/sluice/email_signup_judge.html:11
+msgid "If you accept, please click the following "
+msgstr "Si vous acceptez, veuillez cliquer le "
+
+#: templates/emails/portfolioreview/email_invite_judge.html:12
+#: templates/emails/portfolioreview/email_signup_judge.html:12
+#: templates/emails/sluice/email_invite_judge.html:14
+#: templates/emails/sluice/email_signup_judge.html:14
+msgid "link"
+msgstr "lien"
+
+#: templates/emails/signature.html:9
+msgid "Team ascribe"
+msgstr "L'équipe ascribe"
+
+#: templates/emails/sluice/email_invite_judge.html:10
+#: templates/emails/sluice/email_signup_judge.html:10
+msgid "We would like to invite you to be a jury member for Sluice_screens ↄc."
+msgstr ""
+"Nous souhaitons vous inviter à être membre du jury pour Sluice_screens ↄc."
+
+#: templates/emails/transaction_accepted_sender_body.html:16
+msgid "has accepted"
+msgstr "a accepté"
+
+#: templates/emails/transaction_notification_sender_body.html:15
+msgid "has"
+msgstr "a"
+
+#: templates/emails/transaction_piece_accepted_receiver_body.html:16
+msgid "accepted to"
+msgstr "a accepté de"
+
+#: templates/emails/transaction_piece_accepted_receiver_body.html:16
+#: templates/emails/transaction_piece_rejected_receiver_body.html:16
+msgid "you"
+msgstr "vous"
+
+#: templates/emails/transaction_piece_rejected_receiver_body.html:16
+msgid "refused to"
+msgstr "a refusé de"
+
+#: templates/emails/transaction_piece_request_receiver_body.html:15
+msgid "You've requested"
+msgstr "Vous avez demandé"
+
+#: templates/emails/transaction_piece_request_receiver_body.html:15
+msgid "to loan you"
+msgstr "de vous prêter"
+
+#: templates/emails/transaction_rejected_sender_body.html:16
+msgid "has rejected"
+msgstr "a rejeté"
+
+#: templates/emails/transaction_request_sender_body.html:15
+msgid "You've"
+msgstr "Vous avez"
+
+#: templates/emails/transaction_request_sender_body.html:21
+msgid "to"
+msgstr "à"
+
+#: templates/emails/welcome/body.html:19 templates/emails/welcome/body.txt:4
+msgid ""
+"Please confirm your email address to activate your account and start "
+"ascribing"
+msgstr ""
+"Veuillez confirmer votre adresse email pour activer votre compte et "
+"commencer à utiliser ascribe."
+
+#: templates/emails/welcome/body.html:30
+msgid "Activate Your Account"
+msgstr "Activer votre compte:"
+
+#: templates/emails/welcome/body.txt:2
+msgid "Welcome to ascribe"
+msgstr "Bienvenue chez ascribe"
+
+#: users/serializers.py:21
+msgid ""
+"The reset password token + link you choose is outdated. Update your emails "
+"and try again."
+msgstr ""
+
+#: users/serializers.py:34
+msgid "Activate your account first by checking your email."
+msgstr "Vous devez activez votre compte. Consultez vos courriels."
+
+#: users/serializers.py:48
+#, python-format
+msgid "Email %s not found."
+msgstr "Courriel %s introuvable."
+
+#: users/serializers.py:71
+msgid "Password cannot be empty."
+msgstr "Le mot de passe ne peut pas être vide."
+
+#: users/serializers.py:72
+msgid "Password needs to contain at least 10 characters"
+msgstr "Le mot de passe doit contenir au moins 10 caractères"
+
+#: users/serializers.py:79
+msgid "Currently we do not support unicode characters in passwords."
+msgstr ""
+"Présentement, nous ne supportons pas les caractères Unicode dans les mots de "
+"passe."
+
+#: users/serializers.py:91
+msgid "Passwords do not match"
+msgstr "Les mots de passe ne correspondent pas"
+
+#: users/serializers.py:111
+msgid "Couldn't find a request to reset your password"
+msgstr ""
+"Impossible de trouver une requête pour réinitialiser votre mot de passe"
+
+#: users/serializers.py:115
+msgid "Token expired, you can renew it by resetting your password once more"
+msgstr ""
+"Le jeton a expiré, vous pouvez le renouveler en réinitialisant votre mot de "
+"passe une fois de plus"
+
+#: users/serializers.py:132
+msgid "An account with this email/username already exists."
+msgstr "Un compte avec ce courriel / nom d'utilisateur existe déjà"
+
+#: users/serializers.py:142
+msgid "Username not available"
+msgstr "Ce nom d'utilisateur n'est pas disponible"
+
+#: users/serializers.py:167
+msgid "You must accept the terms and conditions."
+msgstr "Vous devez accepter les Termes et Conditions."
+
+#: users/serializers.py:207
+#, python-format
+msgid "Application with name %s already exists"
+msgstr "Une application avec le nom %s existe déjà"
+
+#: users/serializers.py:224
+#, python-format
+msgid "Application with name %s doesnt exists or you dont have access."
+msgstr "L'application avec le nom %s n'existe pas ou vous n'y avez pas accès."
+
+#: users/serializers.py:272 users/serializers.py:276
+msgid "Email or password is incorrect"
+msgstr "Courriel ou mot de passe incorrect"
+
+#: users/serializers.py:278
+#, python-format
+msgid "Account with email '%s' is disabled."
+msgstr "Le compte avec le courriel '%s' est désactivé."
+
+#: users/serializers.py:285
+msgid "Incorrect password"
+msgstr "Mot de passe incorrect"
+
+#: users/serializers.py:292
+msgid "Couldn't find a request to activate your account"
+msgstr "Impossible de trouver une requête pour activer votre compte"
+
+#: users/serializers.py:295
+msgid "Token expired, you can login using your password"
+msgstr ""
+"Jeton expiré, vous pouvez vous connecter en utilisant votre mot de passe"
+
+#: web/settings.py:220
+msgid "French"
+msgstr "Français"
+
+#: web/settings.py:221
+msgid "English"
+msgstr "Anglais"
+
+#~ msgid " by "
+#~ msgstr " de "
+
+#~ msgid "by "
+#~ msgstr "de "
+
+#~ msgid "Follow this link to reset your password"
+#~ msgstr "Suivez ce lien pour réinitialiser votre mot de passe"
+
+#~ msgid ""
+#~ "When you ascribe work to our site, you lock down your ownership rights "
+#~ "and stake a claim on your digital property.  You are able to set limits "
+#~ "to the number of editions of your work, consign to a trusted agent or "
+#~ "transfer ownership to a collector."
+#~ msgstr ""
+#~ "Lorsque vous attribuez une oeuvre sur notre site, vous verrouillez vos "
+#~ "droits de propriété et vous revendiquez vos droits sur votre oeuvre "
+#~ "digitale.  Vous pouvez limiter le nombre d'éditions de votre oeuvre, "
+#~ "consigner votre oeuvre à un agent de confiance ou transférer la propriété "
+#~ "de votre oeuvre à un collectionneur."
+
+#~ msgid "Click here to activate your account:"
+#~ msgstr "Cliquez ici pour activer votre compte:"
+
+#~ msgid "Thank you and enjoy,"
+#~ msgstr "Merci et profitez-en bien,"
+
+#~ msgid "Click here to reset your password"
+#~ msgstr "Cliquez ici pour réinitialiser votre mot de passe"
+
+#~ msgid "Welcome to ascribe! We're happy to have you on-board."
+#~ msgstr "Bienvenue chez ascribe! Nous sommes heureux de vous avoir à bord."
+
+#~ msgid ""
+#~ "ascribe is all about giving you the power to protect and control your "
+#~ "digital work."
+#~ msgstr ""
+#~ "ascribe c'est le pouvoir de protéger et de contrôler votre travail "
+#~ "numérique."
+
+#~ msgid "Consign your work to a trusted agent to sell."
+#~ msgstr "De consignez votre travail à un agent de confiance pour le vendre."
+
+#~ msgid "Archive your work."
+#~ msgstr "D'archivez votre travail."
+
+#~ msgid "Transfer rights and editions to collectors."
+#~ msgstr "De transférez les droits et les éditions à des collectionneurs."
+
+#~ msgid "Wrong token, what's wrong with you?"
+#~ msgstr "Mauvais jeton, qu'est-ce qui ne va pas avec vous?"
+
+#~ msgid "Welcome to Creative Commons and ascribe"
+#~ msgstr "Bienvenue chez Creative Commons et ascribe"
+
+#~ msgid ""
+#~ "Welcome to Creative Commons France! We're happy to have you on-board."
+#~ msgstr ""
+#~ "Bienvenue chez Creative Commons France! Nous sommes heureux de vous avoir "
+#~ "à bord."

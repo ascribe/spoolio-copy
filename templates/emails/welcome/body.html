@@ -1,0 +1,39 @@
+{% extends 'emails/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" valign="top" style="padding-top:40px;">
+            <!-- // Begin Template Header \\ -->
+            {% include 'emails/header.html' %}
+            <!-- // End Template Header \\ -->
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" style="padding-top:0;">
+            <div>
+                <p>
+                    {% trans "Please confirm your email address to activate your account and start ascribing" %}
+                </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" style="padding-top:20;">
+        <table border="0" cellpadding="15" cellspacing="0" class="templateButton">
+          <tr>
+            <td align="center" valign="middle" class="templateButtonContent">
+              <a href="{{ host }}?token={{ token }}&email={{ email_safe }}&subdomain={{ subdomain }}" target="_blank">
+                {% trans "Activate Your Account" %}
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+{% endblock %}

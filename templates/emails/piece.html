@@ -1,0 +1,39 @@
+
+{% for edition in editions %}
+<a href="{{ signup_or_login_link }}&redirectAuthenticated={{ edition.url_safe }}" target="_blank">
+    <div style="margin-bottom: 0.5em;
+                margin-top: 0.5em;
+                padding: 0">
+        <div style="border: 1px solid rgba(0, 60, 105, 0.2);
+                    padding: 0;
+                    margin: 0;
+                    max-height: 104px !important;
+                    color: #222 !important">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="padding: 0">
+                            <div style="
+                                    background: url({{edition.thumbnail.url_safe}}) no-repeat center center / cover;
+                                    display: inline-block;
+                                    width: 100px;
+                                    margin: 0;
+                                    height: 100px;" ></div>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <div style="margin-left: 20px; margin-top: 0;">
+                                <h3 style="margin-top: 1em; margin-bottom: 0;">{{ edition.title|upper }}</h3>
+                                <h4 style="margin-top: 0.3em; margin-bottom: 0;">{{ edition.artist_name }}</h4>
+                                <div style="margin-top: 0.2em;">{{ edition.yearAndEdition_str }}</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+        </div>
+    </div>
+</a>
+{% endfor %}
+
+{% include 'emails/message.html' %}

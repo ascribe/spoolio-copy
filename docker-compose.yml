@@ -1,0 +1,151 @@
+version: '2'
+
+services:
+  spool:
+    build: .
+    # NOTE mount volumes so that when the source code is modified
+    # containers will run off that modified code -- for development
+    volumes:
+      - ./newrelic.ini:/usr/src/app/newrelic.ini
+      - ./conftest.py:/usr/src/app/conftest.py
+      - ./dynamicfixtures.py:/usr/src/app/dynamicfixtures.py
+      - ./applications:/usr/src/app/applications
+      - ./acl:/usr/src/app/acl
+      - ./bitcoin:/usr/src/app/bitcoin
+      - ./blobs:/usr/src/app/blobs
+      - ./coa:/usr/src/app/coa
+      - ./core:/usr/src/app/core
+      - ./docs:/usr/src/app/docs
+      - ./emails:/usr/src/app/emails
+      - ./encoder:/usr/src/app/encoder
+      - ./locale:/usr/src/app/locale
+      - ./note:/usr/src/app/note
+      - ./ownership:/usr/src/app/ownership
+      - ./piece:/usr/src/app/piece
+      - ./prize:/usr/src/app/prize
+      - ./s3:/usr/src/app/s3
+      - ./users:/usr/src/app/users
+      - ./util:/usr/src/app/util
+      - ./web:/usr/src/app/web
+      - ./whitelabel:/usr/src/app/whitelabel
+      - ./static:/usr/src/app/static
+      - ./templates:/usr/src/app/templates
+      - ./requirements:/usr/src/app/requirements
+      - ./pytest.ini:/usr/src/app/pytest.ini
+    ports:
+      - "8000"
+    env_file:
+      - /opt/spool_secrets.local.env
+    environment:
+      CELERY_BROKER_URL: 'amqp://guest:guest@bugsbunny//'
+    command: uwsgi --socket :8000 --module web.wsgi
+
+  db:
+    build: ./.db/
+    volumes:
+      - ~/dbdumps:/tmp/dbdumps
+    volumes_from:
+      - data
+
+  data:
+    restart: always
+    build: ./.db/
+    volumes:
+      - /var/lib/postgresql/data
+    command: "true"
+
+  nginx:
+    restart: always
+    build: ./.nginx/
+    volumes:
+      - ./.nginx/conf.d:/etc/nginx/conf.d
+    ports:
+      - "49880:80"
+
+  rabbitmq:
+    image: rabbitmq
+    hostname: bugsbunny
+
+  celeryworker:
+    build: .
+    env_file:
+      - /opt/spool_secrets.local.env
+    environment:
+      CELERY_BROKER_URL: 'amqp://guest:guest@bugsbunny//'
+    command: celery -A util worker -Q celery -n celery.%h -l info --without-gossip --without-heartbeat
+
+  bitcoinworker:
+    build: .
+    env_file:
+      - /opt/spool_secrets.local.env
+    environment:
+      CELERY_BROKER_URL: 'amqp://guest:guest@bugsbunny//'
+    command: celery -A util worker -Q bitcoin -n bitcoin.%h -l info --without-gossip --without-heartbeat
+
+  emailworker:
+    build: .
+    env_file:
+      - /opt/spool_secrets.local.env
+    environment:
+      CELERY_BROKER_URL: 'amqp://guest:guest@bugsbunny//'
+    command: celery -A util worker -Q emails -n emails.%h -l info --without-gossip --without-heartbeat
+
+  celerybeat:
+    build: .
+    env_file:
+      - /opt/spool_secrets.local.env
+    environment:
+      CELERY_BROKER_URL: 'amqp://guest:guest@bugsbunny//'
+    command: celery -A util beat
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "48025:8025"
+      - "1025"
+
+  bitcoin:
+    image: sbellem/bitcoin
+    volumes:
+      -  ./.bitcoin:/root/.bitcoin
+    ports:
+      - '18332'
+      - '18333'
+    command: bitcoind -regtest -printtoconsole
+
+  redis:
+    image: redis
+    ports:
+      - '6379'
+
+  rdb:
+    image: rethinkdb
+    ports:
+      - "58088:8080"
+      - "28015"
+
+  bdb:
+    build:
+      context: ./compose/bigchaindb
+    volumes:
+      - ./.bigchaindb:/root/.bigchaindb
+    environment:
+      BIGCHAINDB_CONFIG: /root/.bigchaindb
+      BIGCHAINDB_DATABASE_HOST: rdb
+    command: bigchaindb start
+
+  bdocs:
+    build: .
+    volumes:
+      - .:/usr/src/app/
+    env_file:
+      - /opt/spool_secrets.local.env
+    working_dir: /usr/src/app/docs
+    command: make html
+
+  vdocs:
+    image: nginx
+    ports:
+      - '38080:80'
+    volumes:
+      - ./docs/build/html:/usr/share/nginx/html

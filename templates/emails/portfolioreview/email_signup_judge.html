@@ -1,0 +1,18 @@
+{% extends 'emails/portfolioreview/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <p>{% trans "Hi" %} {{ username }},</p>
+    <p>
+    {% trans "We would like to invite you to be a jury member for Portfolio Review 2016." %}
+    {% trans "If you accept, please click the following " %}
+        <a href="{{ host }}?token={{ token }}&email={{ email_safe }}&subdomain={{ subdomain }}" target="_blank"
+           style="color:rgb(0, 60, 105)!important">
+          {% trans "link" %}
+        </a>.
+    </p>
+
+    <p>Truly yours,</p>
+    <p>Portfolio Review 2016 and ascribe teams</p>
+{% endblock %}

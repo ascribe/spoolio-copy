@@ -1,0 +1,32 @@
+{% extends 'emails/base_ops.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+    <tr>
+        <td colspan="3" valign="top" class="bodyContent">
+            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+		{% include 'emails/transaction_header.html' %}
+                <tr>
+                    <td align="center" valign="top" style="padding-top:0;">
+                        <p>
+			{{ receiver.username }} {% trans 'has' %} {{ verb_past_participle }}
+			{% for edition in editions %}
+			    <br/>
+			    {{ edition.title }} {% trans 'by' %} {{ edition.artist_name }}, {{ edition.yearAndEdition_str }}
+			{% endfor %}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    {% for edition in editions %}
+	{% include 'emails/image_and_text.html' %}
+    {% endfor %}
+    {% include 'emails/new_message.html' %}
+</table>
+
+{% endblock %}

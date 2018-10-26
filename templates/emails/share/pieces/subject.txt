@@ -1,0 +1,1 @@
+{{ sender.username }} shared the artwork "{{ pieces.0.title }}" with you

@@ -1,0 +1,16 @@
+{% extends 'emails/base.html' %}
+
+{% block content %}
+
+    <div>
+        <p>Dear {{ receiver }},</p>
+        <p>Thank you for your application to Sluice_screens ↄc. All applicants will be informed on September 1, 2015 whether they have been shortlisted.</p>
+        <p>In the meantime, if you have any questions about Sluice_screens ↄc please contact us at <a href="mailto:info@sluice.info" target="_blank" style="color:rgb(0, 60, 105)!important">info@sluice.info</a>. Any questions for ascribe can be directed at <a href="mailto:team@ascribe.io" target="_blank" style="color:rgb(0, 60, 105)!important">team@ascribe.io</a>.</p>
+        <p>We look forward to seeing you at Sluice_2015 on the 16th-18th of October.</p>
+        <p>Warm wishes,</p>
+        <p>Sluice_ and ascribe teams</p>
+    </div>
+    <br />
+    {% include 'emails/piece.html' %}
+
+{% endblock %}

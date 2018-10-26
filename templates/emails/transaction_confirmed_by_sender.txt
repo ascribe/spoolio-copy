@@ -1,0 +1,8 @@
+Hi {{ receiver.username }},
+    
+ {{ sender.username }} accepted to loan you "{{ editions.0.title }}".
+ 
+We'll let you know when the loan term ends!
+
+
+{% include 'emails/signature.txt' %}

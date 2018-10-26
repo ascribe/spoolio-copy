@@ -1,0 +1,27 @@
+codecov:
+  bot: sbellem
+  token: 8a018736-1cc5-4010-84f2-1a44551b28e9
+  branch: master
+
+coverage:
+  precision: 2
+  round: down
+  range: "75...100"
+
+status:
+  project:
+    default:
+      target: auto
+      if_no_uploads: error
+    
+  patch:
+    default:
+      target: auto
+              
+  changes:
+    default:
+      branches: null
+
+comment:
+  layout: "header, diff, changes, sunburst, uncovered"
+  behavior: default

@@ -1,0 +1,16 @@
+[run]
+source = .
+omit =
+    expire_sessions.py
+    manage.py
+    venv/*
+    *fixtures*
+    *migrations*
+    *scripts*
+    *test*
+    bitcoin/run/*
+    bitcoin/management/*
+    emails/management/commands/previewmails.py
+    *integration*
+
+[report]

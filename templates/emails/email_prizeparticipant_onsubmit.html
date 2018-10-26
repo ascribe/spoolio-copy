@@ -1,0 +1,28 @@
+{% extends 'emails/base.html' %}
+
+{% block content %}
+
+<div>
+    <p>Dear {{ receiver }},</p>
+    <p>
+        Thank you for applying to the Berlin Art Prize 2015 via ascribe!
+    </p>
+    <p>
+        All applicants will be informed on May 1, 2015 whether they have been nominated.
+        In the meantime, if you have any questions about the Berlin Art Prize please contact us at
+        <a href="mailto:contact@berlinartprize.com" target="_blank" style="color:rgb(0, 60, 105)!important">contact@berlinartprize.com</a>. Any questions for ascribe can be directed at
+        <a href="mailto:team@ascribe.io" target="_blank" style="color:rgb(0, 60, 105)!important">team@ascribe.io</a>.
+    </p>
+    <p>
+        We look forward to seeing you at the exhibition opening and award ceremony on June 13, 2015!
+    </p>
+    <p>
+        Warm wishes,
+    </p>
+    <p>
+        The Berlin Art Prize & ascribe teams
+    </p>
+    <br />
+</div>
+
+{% endblock %}

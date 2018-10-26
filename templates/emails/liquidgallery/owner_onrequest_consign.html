@@ -1,0 +1,31 @@
+{% extends 'emails/liquidgallery/base.html' %}
+
+{% block content %}
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+    <tr>
+        <td colspan="3" valign="top" class="bodyContent">
+            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                {% include 'emails/liquidgallery/header.html' %}
+                <tr>
+                    <td align="left" valign="top" style="padding-top:10px">
+                        <p>Hi {{ sender.username }},</p>
+                        <p>Giving you a heads up that we successfully received your submission!</p>
+                        <p>
+                            You've just consigned:
+                            {% include 'emails/edition_list.html' %}
+                            to {{ receiver }}.
+                        </p>
+                        <p>
+                            It will be posted and published on the site in about 48 hours, we'll send you another email when it's live, with a shareable link.
+                        </p>
+                        <p>Thank you for your submission, we are truly honored!</p>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+language: python
+python: 2.7
+cache: pip
+
+git:
+  depth: 20
+
+services:
+  - postgresql
+
+env:
+  global:
+    - BITCOIN_HOST=localhost
+    - BITCOIN_RPCUSER=bdbip
+    - BITCOIN_RPCPASSWORD=coalaip
+    - DEPLOYMENT=local
+    - DJANGO_SECRET_KEY=abc
+    - ZENCODER_API_KEY_TEST=abc
+    - DJANGO_EMAIL_HOST_PASSWORD=abc
+    - BLOCKTRAIL_API_KEY=abc
+    - BLOCKTRAIL_API_SECRET=abc
+    - BLOCKTRAIL_TESTNET_TOKEN=abc
+    - BLOCKTRAIL_MAINNET_TOKEN=abc
+    - DATABASE_URL=local_database
+
+# bitcoind seems to just be a dummy package on ubuntu precise
+#before_install:
+# - sudo apt-add-repository -y ppa:bitcoin/bitcoin
+# - sudo apt-get -q update
+# - sudo apt-get install -y bitcoind
+# - bitcoind -daemon -regtest -rpcuser=bdbip -rpcpassword=coalaip -txindex=1
+
+before_script:
+  - psql -c 'create database mysite_db;' -U postgres
+  - psql -c 'create user mysite_user;' -U postgres
+  - psql --dbname template1 -c 'create extension hstore;' -U postgres
+  - psql -c 'GRANT ALL PRIVILEGES ON DATABASE mysite_db to mysite_user;' -U postgres
+  - psql -c 'ALTER USER mysite_user CREATEDB;' -U postgres
+
+before_install:
+  - pip install -U pip
+
+install: pip install -r requirements/travis.txt
+
+script: py.test -v --durations=100 --reuse-db --cov
+
+after_success:
+  - export CODECOV_TOKEN="8a018736-1cc5-4010-84f2-1a44551b28e9"
+  - codecov

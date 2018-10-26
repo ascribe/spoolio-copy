@@ -1,0 +1,18 @@
+[
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "ascribe.io",
+      "name": "live"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 2,
+    "fields": {
+      "domain": "localhost.com:8000",
+      "name": "local"
+    }
+  }
+]

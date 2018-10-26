@@ -1,0 +1,35 @@
+{% extends 'emails/polline/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+    <tr>
+        <td colspan="3" valign="top" class="bodyContent">
+            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                {% include 'emails/polline/header.html' %}
+                <tr>
+                    <td align="left" valign="top" style="padding-top:10px">
+                        <p>{% trans "Hi" %} {{ username }},</p>
+                        <p>
+                        {% trans "Welcome to polline.ascribe.io! We're happy to have you on-board." %}
+                        </p>
+
+
+                        <p>
+                            <a href="{{ host }}?token={{ token }}&email={{ email_safe }}&subdomain={{ subdomain }}" target="_blank"
+                               style="color:rgb(0, 60, 105)!important">
+                              {% trans "Click here to activate your account." %}
+                            </a>
+                        </p>
+                        <p>{% trans "polline.ascribe.io allows you to register your work and consign it to Polline Art Marketplace." %}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{% endblock %}

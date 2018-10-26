@@ -1,0 +1,10 @@
+-r common.txt
+
+coverage
+pep8
+pyflakes
+pylint
+pytest>=3.0.0
+pytest-capturelog
+pytest-cov
+pytest-django

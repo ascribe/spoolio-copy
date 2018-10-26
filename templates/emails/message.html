@@ -1,0 +1,7 @@
+
+{% if message %}
+    <div>
+        {{ sender.username }} also left a message for you:
+        <pre style="text-align: justify; border:1px solid rgba(0, 60, 105, 0.1); background-color: rgba(0, 60, 105, 0.02); padding:10px; font-weight: bold">{{ message }}</pre>
+    </div>
+{% endif %}

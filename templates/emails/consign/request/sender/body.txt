@@ -1,0 +1,8 @@
+Hello,
+   
+You've just consigned {{ editions_qty }} edition{{ editions_qty|pluralize }} to {{ receiver.username }}.  
+   
+Once they confirm, we'll let you know.
+
+
+{% include 'emails/signature.txt' %}

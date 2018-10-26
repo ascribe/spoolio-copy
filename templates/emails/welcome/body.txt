@@ -1,0 +1,10 @@
+{% load i18n %}
+{% trans 'Welcome to ascribe' %} (https://www.ascribe.io)!
+
+{% trans 'Please confirm your email address to activate your account and start ascribing' %}
+        
+{{ safe_link }}
+
+{% trans 'Truly yours' %},
+     
+{% include 'emails/signature.txt' %}

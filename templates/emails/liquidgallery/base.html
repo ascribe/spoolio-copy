@@ -1,0 +1,18 @@
+{% extends 'emails/base_generic.html' %}
+{% load staticfiles %}
+
+{% block additional_styles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/emails/whitelabels/liquidgallery.css' %}" />
+{% endblock %}
+
+{% block footer %}
+    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td colspan="2" valign="middle" id="social">
+                <div mc:edit="std_social">
+                    For any submission questions, please contact support@ascribe.io
+                </div>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

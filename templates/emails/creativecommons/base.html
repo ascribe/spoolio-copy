@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+{% load i18n %}
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% trans "Welcome to Creative Commons France" %}</title>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    p, div{
+        text-align: justify;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    a {
+        color: rgba(0, 60, 105, 1);
+        text-decoration: none !important;
+    }
+    a:hover{
+        color: #000000;
+    }
+</style>
+</head>
+<body>
+
+{% include 'emails/creativecommons/header.html' %}
+
+{% block content %}
+{% endblock %}
+
+
+{% include 'emails/creativecommons/signature.html' %}
+
+</body>
+</html>

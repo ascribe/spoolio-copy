@@ -1,0 +1,8 @@
+Hi {{ sender.username }},
+    
+ the following loan request has been rejected.
+   
+Ascribe user {{ receiver.username }} denied the loan for "{{ editions.0.title }}".
+          
+
+{% include 'emails/signature.txt' %}

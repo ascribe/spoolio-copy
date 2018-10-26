@@ -1,0 +1,29 @@
+{% extends 'emails/ikonotv/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+
+<div>
+    <p>Dear {{ username }},</p>
+    <p>Welcome to the ikonoTV - ascribe platform where you can securely loan your files to us.</p>
+    <p>
+        To sign with one click and upload your file, please click
+        <a href="{{ link }}" target="_blank">
+            here
+        </a>
+        and register.
+    </p>
+    <p>
+        Please make sure you fill in all the fields so that we can correctly credit your work. For communication purposes, please also add a brief text about yourself and your work.
+    </p>
+    <p>
+        Preferred video format: highest resolution available with the best compression, 25fps. Please avoid .avi files.
+    </p>
+    <p>
+        If you have any questions please feel free to contact <a href="mailto:submissions@ikono.org" target="_blank">submissions@ikono.org</a>.
+    </p>
+</div>
+
+{% endblock %}

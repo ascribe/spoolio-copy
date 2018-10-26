@@ -1,0 +1,9 @@
+<ul>
+{% for edition in editions %}
+    <li>
+        <a href="{{ signup_or_login_link }}&redirectAuthenticated={{ edition.url_safe }}" style="color:rgb(0, 60, 105)!important" target="_blank">
+            "{{ edition.title }}"
+        </a>
+    </li>
+{% endfor %}
+</ul>

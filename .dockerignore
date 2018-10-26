@@ -1,0 +1,11 @@
+.db
+.git
+.dockerignore
+.gitignore
+deploy.live.sh
+deploy.staging.sh
+docker-compose.yml
+Dockerfile
+newrelic.ini
+Procfile
+README.md

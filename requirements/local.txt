@@ -1,0 +1,8 @@
+-r tests.txt
+
+ipdb
+ipython
+Sphinx
+sphinx-autobuild
+sphinx-rtd-theme
+sphinxcontrib-napoleon

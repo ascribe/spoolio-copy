@@ -1,0 +1,26 @@
+{% extends 'emails/polline/base.html' %}
+
+{% block content %}
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+    <tr>
+        <td colspan="3" valign="top" class="bodyContent">
+            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                {% include 'emails/polline/header.html' %}
+                <tr>
+                    <td align="left" valign="top" style="padding-top:10px">
+                        <p>Hi {{ sender.username }},</p>
+                        <p>
+                            {{ receiver }} just accepted your consignment request to manage the sale of:
+                            {% include 'emails/edition_list.html' %}
+                        <p>
+                            We'll let you know when they've sold it!
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+[
+{
+  "fields": {
+    "public_key": "xpub661MyMwAqRbcGmRRnUqPoFSCsWp59QDuiMngH7uAwD8DrM1RHrF21DAU7GFNX6YDB8b2qVKTNjLdhLwm6HZjrB64TfbgaFnzTFk9DvxNqXa",
+    "user": 1
+  },
+  "model": "django.publicwallet",
+  "pk": 1
+}
+]

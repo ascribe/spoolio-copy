@@ -1,0 +1,17 @@
+{% extends 'emails/base.html' %}
+
+{% block content %}
+
+<div>
+    <p>Hi {{ receiver }},</p>
+    <p>
+        Ascribe user {{ sender.username }} just rejected your loan request for the following work:
+        {% include 'emails/edition_list.html' %}
+    </p>
+    <p>
+        Give them a call or write an email to sort it out!  Let us know if you have any questions <a href="mailto:support@ascribe.io" target="_blank" style="color:rgb(0, 60, 105)!important">support@ascribe.io</a>.
+    </p>
+</div>
+{% include 'emails/piece.html' %}
+
+{% endblock %}

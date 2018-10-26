@@ -1,0 +1,8 @@
+Hi {{ sender.username }},
+
+ the following consignment request has been rejected.
+   
+Ascribe user {{ receiver.username }} rejected to manage the sale for "{{ editions.0.title }}".
+
+
+{% include 'emails/signature.txt' %}

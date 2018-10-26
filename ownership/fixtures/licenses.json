@@ -1,0 +1,132 @@
+[
+    {
+        "fields": {
+            "code": "cc-by-4.0",
+            "name": "Attribution 4.0 International",
+            "organization": "Creative Commons France",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "code": "cc-by-nd-4.0",
+            "name": "Attribution-NoDerivs 4.0 International",
+            "organization": "Creative Commons France",
+            "url": "https://creativecommons.org/licenses/by-nd/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "code": "cc-by-sa-4.0",
+            "name": "Attribution-ShareAlike 4.0 International",
+            "organization": "Creative Commons France",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "code": "cc-by-nc-4.0",
+            "name": "Attribution-NonCommercial 4.0 International",
+            "organization": "Creative Commons France",
+            "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "code": "cc-by-nc-sa-4.0",
+            "name": "Attribution-NonCommercial-ShareAlike 4.0 International",
+            "organization": "Creative Commons France",
+            "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "code": "cc-by-nc-nd-4.0",
+            "name": "Attribution-NonCommercial-NoDerivs 4.0 International",
+            "organization": "Creative Commons France",
+            "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "code": "default",
+            "name": "All rights reserved",
+            "organization": "ascribe",
+            "url": "https://www.ascribe.io/faq/#legals"
+        },
+        "model": "ownership.license",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "code": "cc-by-4.0",
+            "name": "Attribution 4.0 International",
+            "organization": "Bokk",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "code": "cc-by-nd-4.0",
+            "name": "Attribution-NoDerivs 4.0 International",
+            "organization": "Bokk",
+            "url": "https://creativecommons.org/licenses/by-nd/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "code": "cc-by-sa-4.0",
+            "name": "Attribution-ShareAlike 4.0 International",
+            "organization": "Bokk",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "code": "cc-by-nc-4.0",
+            "name": "Attribution-NonCommercial 4.0 International",
+            "organization": "Bokk",
+            "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "code": "cc-by-nc-sa-4.0",
+            "name": "Attribution-NonCommercial-ShareAlike 4.0 International",
+            "organization": "Bokk",
+            "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "code": "cc-by-nc-nd-4.0",
+            "name": "Attribution-NonCommercial-NoDerivs 4.0 International",
+            "organization": "Bokk",
+            "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        },
+        "model": "ownership.license",
+        "pk": 13
+    }
+]

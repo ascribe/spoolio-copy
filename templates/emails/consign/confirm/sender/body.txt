@@ -1,0 +1,9 @@
+Hello,
+    
+the following consignment request has been confirmed.
+   
+Ascribe user {{ receiver.username }} will manage the sale for "{{ editions.0.title }}".
+          
+That is, you have now consigned this edition to them.
+
+{% include 'emails/signature.txt' %}

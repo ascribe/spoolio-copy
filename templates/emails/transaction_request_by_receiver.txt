@@ -1,0 +1,8 @@
+Hi {{ receiver.username }},
+    
+ you've just requested a loan for {{ editions_qty }} {{ digital_work_type }}{{ editions_qty|pluralize }} to {{ sender.username }}.  
+   
+Once they confirm, we'll let you know.
+
+
+{% include 'emails/signature.txt' %}

@@ -1,0 +1,8 @@
+Hi {{ sender.username }},
+    
+ your request to terminate a consignment has been rejected.
+   
+Ascribe user {{ receiver.username }} denied un-managing sales of "{{ editions.0.title }}".
+
+
+{% include 'emails/signature.txt' %}

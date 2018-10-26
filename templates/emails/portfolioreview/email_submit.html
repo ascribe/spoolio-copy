@@ -1,0 +1,12 @@
+{% extends 'emails/portfolioreview/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <p>Dear {{ receiver }},</p>
+    <p>Thank you for submitting your work to the Portfolio Review 2016!</p>
+    <p>Every one of the entered projects will be viewed and considered by the Portfolio Review team. The jurors will choose the final shortlist of participants to be invited to Düsseldorf to the Portfolio Review 2016.</p>
+    <p>All applicants will be informed by mid-January whether they have been selected.</p>
+    <p>We look forward to seeing and reading about your work!</p>
+    <p>To see your submission <a href="{{ signup_or_login_link }}&redirectAuthenticated={{ piece.url_safe }}" target="_blank">click here</a>.</p>
+{% endblock %}

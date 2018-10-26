@@ -1,0 +1,32 @@
+{% extends 'emails/creativecommons/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+<div>
+  <p>{% trans "Hi" %} {{ username }},</p>
+    <p>
+    {% trans "Welcome to cc.ascribe.io! We're happy to have you on-board." %}
+    </p>
+
+
+    <p>
+        <a href="{{ host }}?token={{ token }}&email={{ email_safe }}&subdomain={{ subdomain }}" target="_blank"
+           style="color:rgb(0, 60, 105)!important">
+          {% trans "Click here to activate your account." %}
+        </a>
+    </p>
+    <p>{% trans "Creative Commons France is all about giving you the power to protect and control your digital work." %}
+    </p>
+
+    <p>{% trans "Our site allows you to:" %}
+        <br /><br />
+
+        1. {% trans "Register your work and start telling its story." %}<br/>
+        2. {% trans "Append a creative commons license to your work." %}<br/>
+        3. {% trans "Share your work with friends and partners." %}<br/>
+    </p>
+</div>
+
+{% endblock %}
