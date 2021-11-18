@@ -4,7 +4,7 @@ The Secure Public Online Ownership Ledger (SPOOL). This REST-api provides a JSON
 
 ## Note
 
-The original spoolio repository (on GitHub) contained some sensitive information in its Git history, so the files were copied, the sensitive information was redacted, and a new Git repository was created: spoolio-copy. If you're an internet historian and want to look at an archive of the original spoolio repository, then contact @ttmc.
+The original spoolio repository (on GitHub) contained some sensitive information in its Git history, so the files were copied, the sensitive information was redacted, and a new Git repository was created: spoolio-copy. If you're an internet historian and want to look at an archive of the original spoolio repository, then contact Trent McConaghy (@trentmc0 on Twitter).
 
 ## Documentation
 
